@@ -1,0 +1,28 @@
+{% ckan_extends %}
+
+{% block footer_links %}
+
+  AURIN is an initiative of the Australian Government being conducted as part of the Super Science Initiative and financed from the Education Investment Fund, and the National Collaborative Research Infrastructure Strategy.
+
+  <li><a href="https://aurin.org.au/about/privacy-and-compliance/terms-of-use/">Terms of Use</a></li>
+  <li><a href="https://aurin.org.au/about/privacy-and-compliance/privacy-policy/"> Privacy Policy</a></li>
+  <li><a href="https://aurin.org.au/about/contact-us/"> Contact Us</a></li>
+{% endblock %}
+
+
+{% block footer_links_ckan %}
+  {# removes links from this section #}
+{% endblock %}
+
+{% block footer_lang %}
+  {# removes the language selector #}
+{% endblock %}
+
+{% block footer_attribution %}
+  {% set api_url = 'http://docs.ckan.org/en/{0}/api/'.format(g.ckan_doc_version) %}
+    <li><a href="{{ api_url }}">{{ _('CKAN API') }}</a></li>
+    <li><a href="http://www.okfn.org/">{{ _('Open Knowledge Foundation') }}</a></li>
+    <li><a href="http://www.opendefinition.org/okd/"><img src="//assets.okfn.org/images/ok_buttons/od_80x15_blue.png"></a></li>
+
+  <p>{% trans %}<strong>Powered by</strong> <a class="hide-text ckan-footer-logo" href="http://ckan.org">CKAN</a>{% endtrans %}</p>
+{% endblock %}
