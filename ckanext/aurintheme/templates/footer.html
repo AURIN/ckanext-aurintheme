@@ -1,28 +1,56 @@
 {% ckan_extends %}
+ {# ckan_extends tag tells CKAN to process the default home/footer.html file first. #}
+  
+{% block footer_content %}
 
+<table width="100%">
+<tr width="100%">
+	<td width="50%" align="left"><p>AURIN is an initiative of the Australian Government 
+	being conducted as part of the Super Science Initiative and financed 
+	from the Education Investment Fund, and the National Collaborative 
+	Research Infrastructure Strategy.</p></td>	
+	<td width="20%" align="center" valign="top"><p><a href="https://education.gov.au/national-collaborative-research-infrastructure-strategy-ncris"><img width="80%" img height="80%"img src="/NCRIS_PROVIDER_mono.jpg" alt="NCRIS"></a></p></td>
+	<td width="30%" align="center" valign="top"><p><a href="http://www.unimelb.edu.au/"><img width="80%" img height="80%" img src="/logo-university-melbourne-inverted.png" alt="University of Melbourne"></a></p></td>
+	</tr></table>
+	
+<table width="50%">
+<tr>
+	<td width="33%" align="center"><strong><a href="http://aurin.org.au/about/privacy-and-compliance/terms-of-use/">Terms of Use</a></strong></td>
+	<td width="34%" align="center"><strong><a href="http://aurin.org.au/about/privacy-and-compliance/privacy-policy/">Privacy Policy</a></strong></td>	
+	<td width="33%" align="center"><strong><a href="http://aurin.org.au/about/contact-us/">Contact Us</a></strong></td>
+</tr>
+</tr></table>
+<br>
+<br>
+<table width="50%">
+<tr>
+	<td width="100%" align="left" valign="top">
+	<p>{% set api_url = 'http://docs.ckan.org/en/{0}/api.html'.format(g.ckan_doc_version) %} 
+		<a href="{{ api_url }}">{{ _('CKAN API') }}</a></p>
+		<a href="http://www.okfn.org/">{{ _('Open Knowledge Foundation') }}</a></p>	
+		<p><a href="http://www.opendefinition.org/okd/"><img src="http://assets.okfn.org/images/ok_buttons/od_80x15_blue.png"></p>
+		<p><strong>Powered by</strong><br><a href="http://ckan.org/"><img src="/ckan-logo-footer_black.png" alt="CKAN"></a></p></strong>
+		</td>		
+</tr></table>
+{% endblock %}
+ 
+{% block footer_nav %} 
+ {# removes links from this section #}
+{% endblock %}
+ 
 {% block footer_links %}
+ {# removes links from this section #}
+{% endblock %}		
 
-  AURIN is an initiative of the Australian Government being conducted as part of the Super Science Initiative and financed from the Education Investment Fund, and the National Collaborative Research Infrastructure Strategy.
-
-  <li><a href="https://aurin.org.au/about/privacy-and-compliance/terms-of-use/">Terms of Use</a></li>
-  <li><a href="https://aurin.org.au/about/privacy-and-compliance/privacy-policy/"> Privacy Policy</a></li>
-  <li><a href="https://aurin.org.au/about/contact-us/"> Contact Us</a></li>
-{% endblock %}
-
-
-{% block footer_links_ckan %}
-  {# removes links from this section #}
-{% endblock %}
-
+{% block footer_attribution %} 
+ {# removes links from this section #}
+ {% endblock %}		
+ 
 {% block footer_lang %}
   {# removes the language selector #}
-{% endblock %}
+{% endblock %}		
 
-{% block footer_attribution %}
-  {% set api_url = 'http://docs.ckan.org/en/{0}/api/'.format(g.ckan_doc_version) %}
-    <li><a href="{{ api_url }}">{{ _('CKAN API') }}</a></li>
-    <li><a href="http://www.okfn.org/">{{ _('Open Knowledge Foundation') }}</a></li>
-    <li><a href="http://www.opendefinition.org/okd/"><img src="//assets.okfn.org/images/ok_buttons/od_80x15_blue.png"></a></li>
 
-  <p>{% trans %}<strong>Powered by</strong> <a class="hide-text ckan-footer-logo" href="http://ckan.org">CKAN</a>{% endtrans %}</p>
-{% endblock %}
+
+
+

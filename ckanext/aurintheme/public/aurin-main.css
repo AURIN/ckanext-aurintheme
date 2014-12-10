@@ -1,0 +1,106 @@
+/* =====================================================
+   The "account masthead" bar across the top of the site
+   ===================================================== */
+   
+.account-masthead{	
+	padding: 0px;
+	background-image: none;
+}  
+   
+/* ========================================================================
+   The main masthead bar that contains the site logo, nav links, and search
+   ======================================================================== */
+   
+/* The masthead (where the logo and buttons reside) */
+.masthead {
+  background-color: white;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background-image: none;  
+  /* border line to separate middle of page and white header section */
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #F3F3F3;
+}
+
+/* The "navigation pills" in the masthead (the links to Datasets,
+   Organizations, etc) when static or inactive */
+.nav-pills>li>a{	
+	background-color: #005D7A;
+}
+	
+/* remove the "bg.png" image, 7 instances, that causes the rock/textured stipple over CKAN page */
+.module-grid{
+	background-image: none;
+}
+
+.media-grid{
+	background-image: none;
+}
+
+[role=main],.main{
+	/* This is the page background, change to aurin-bg-main01.gif.  */
+	background-image: url("aurin-bg-main01.gif");
+	background-repeat: repeat;	
+	background-position: 0px 0px;
+}
+	
+.datapusher-status.status-complete,
+body{background-image: none;}
+
+/* .account-masthead; .masthead; .site-footer
+
+
+
+/* ===========================================
+   The content in the middle of the front page
+   =========================================== */
+   
+.hero{	
+/* This is the 'search area' background  */
+	background-image: url("aurin-bg-main02.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center center;	
+}
+	
+.hero:after{
+	background: transparent;
+}
+
+*.hero:after,
+body {
+	background-image: url(aurin-bg-main01.gif);
+	background-repeat: repeat;
+	background-position: 0px 20px;
+} 
+   
+   
+/* ====================================
+   The footer at the bottom of the site
+   ==================================== */
+   
+.site-footer,
+body {
+  background-color: white;
+}
+
+/* The text in the footer. */
+.site-footer{
+	background-image: none;
+}
+
+.site-footer,
+.site-footer label,
+.site-footer small {
+  color: #444444;
+  /* border line to separare middle of page and white footer section */
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #F3F3F3;
+}
+
+/* The link texts in the footer. */
+.site-footer a {
+  color: #444444;
+}
