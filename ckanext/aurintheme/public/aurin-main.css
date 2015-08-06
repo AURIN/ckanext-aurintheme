@@ -29,6 +29,24 @@
 	background-color: #005D7A;
 }
 	
+/* workarounds for changes in the upgrade from CKAN 2.2 to 2.4 */
+.navbar .nav>li>a {
+	padding: 8px 12px 8px 12px;
+}
+.navbar .nav {
+	margin-right: 0px;
+}
+.homepage .module-search {
+	margin-top: 0px;
+}
+.filters {
+	border-top: 1px solid #dddddd;
+}
+.hero {
+	min-height: 185px;
+	height:185px;
+}
+
 /* remove the "bg.png" image, 7 instances, that causes the rock/textured stipple over CKAN page */
 .module-grid{
 	background-image: none;
