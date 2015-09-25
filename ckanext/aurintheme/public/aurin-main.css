@@ -46,6 +46,10 @@
 	min-height: 185px;
 	height:185px;
 }
+.media-heading {
+        word-break: normal;
+        font-size: 16px;
+}
 
 /* remove the "bg.png" image, 7 instances, that causes the rock/textured stipple over CKAN page */
 .module-grid{
