@@ -54,6 +54,10 @@
 .context-info h1.heading {
 	word-break: normal;
 }
+.navbar .nav>li>a:focus,.navbar .nav>li>a:hover {
+	background-color: #005D7A;
+}
+
 
 .media-grid{
 	background-image: none;
