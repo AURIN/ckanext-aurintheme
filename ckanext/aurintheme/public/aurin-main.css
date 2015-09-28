@@ -49,11 +49,10 @@
 .media-heading {
         word-break: normal;
         font-size: 16px;
-}
-
-/* remove the "bg.png" image, 7 instances, that causes the rock/textured stipple over CKAN page */
-.module-grid{
 	background-image: none;
+}
+.context-info h1.heading {
+	word-break: normal;
 }
 
 .media-grid{
