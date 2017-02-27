@@ -5,10 +5,10 @@
 
 {% block header_logo %}
         {% if g.site_logo %}
-          <a class="logo" a target="_blank" href="http://aurin.org.au"><img src="{{ h.url_for_static(g.site_logo) }}" alt="{{ g.site_title }} Logo" title="{{ g.site_title }} Logo" /></a>
+          <a class="logo" a target="_blank" href="https://aurin.org.au"><img src="{{ h.url_for_static(g.site_logo) }}" alt="{{ g.site_title }} Logo" title="{{ g.site_title }} Logo" /></a>
         {% else %}
           <h1>
-            <a href="http://aurin.org.au">{{ g.site_title }}</a>
+            <a href="https://aurin.org.au">{{ g.site_title }}</a>
           </h1>
           {% if g.site_description %}<h2>{{ g.site_description }}</h2>{% endif %}
         {% endif %}
@@ -20,5 +20,5 @@
         ('organizations_index', _('Organizations')),
         ('group_index', _('Groups')),
     ) }}
-    <li id="li-about"><a target="_blank" id="a-about" href="http://aurin.org.au/about">About</a></li>
+    <li id="li-about"><a target="_blank" id="a-about" href="https://aurin.org.au/about">About</a></li>
 {% endblock %}
